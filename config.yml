@@ -1,0 +1,32 @@
+# ================= DuckCore =================
+
+draw:
+  stone-cost: 10          # koszt 1 losowania kamienia (Smoczy Odlamek)
+  drop-upgrade-cost: 5    # koszt ulepszenia Perku Dropu
+  perk-min: 0.10          # minimalny bonus z losowania perka (%)
+  perk-max: 10.0          # maksymalny bonus z losowania perka (%)
+  perk-curve: 3.0         # im wyzsze, tym czesciej wypadaja male wartosci (1.0 = rowno)
+  drop-min: 3.0           # ulepszenie Perku Dropu: od (%)
+  drop-max: 10.0          # ulepszenie Perku Dropu: do (%)
+
+caps:
+  own: 70.0               # maksymalny wlasny bonus perka (%)
+  clan: 20.0              # maksymalny bonus klanowy (%)
+
+clan:
+  max-members: 10
+  bonus-per-level: 0.5    # bonus klanowy (%) za kazdy poziom klanu
+  points-per-level: 100   # punkty klanu potrzebne na kolejny poziom
+  points-per-kill: 5      # punkty klanu za zabojstwo czlonka
+
+ranking:
+  start: 1000
+  anti-farm-seconds: 300  # ten sam zabojca + ta sama ofiara w tym czasie = 0 pkt
+
+# Opcjonalnie: CustomModelData kamieni z resourcepacka (0 = domyslny item)
+stone-models:
+  sila: 0
+  odpornosc: 0
+  zrecznosc: 0
+  inteligencja: 0
+  magia: 0

@@ -1,0 +1,27 @@
+name: DuckCore
+version: '${project.version}'
+main: pl.duckmc.core.DuckCore
+api-version: '1.21'
+authors: [DuckMC]
+description: DuckMC - perki, szaman, ranking, klany, scoreboard
+
+commands:
+  szaman:
+    description: Otwiera menu Szamana (perki, kamienie)
+    permission: duckcore.use
+  odlamki:
+    description: Pokazuje Twoje Smocze Odlamki i kamienie
+    permission: duckcore.use
+  klan:
+    description: Komendy klanu
+    aliases: [clan]
+    permission: duckcore.use
+  duck:
+    description: Komendy administracyjne
+    permission: duckcore.admin
+
+permissions:
+  duckcore.use:
+    default: true
+  duckcore.admin:
+    default: op
